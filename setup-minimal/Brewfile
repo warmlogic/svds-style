@@ -10,10 +10,10 @@ tap 'homebrew/bundle'
 tap 'homebrew/dupes'
 tap 'caskroom/versions'
 tap 'homebrew/versions'
-tap 'jbwhit/tap'
+# tap 'jbwhit/tap'
 
 # This installs the svds-helper functions
-brew 'nb3automation'
+# brew 'nb3automation'
 
 # Use GNU instead of BSD commands
 # the with-default-names uses normal name, rather than
@@ -44,40 +44,37 @@ brew 'bash-completion2'
 brew 'htop'
 
 # Git and some surrounds
-brew 'git'
-brew 'git-lfs'
-brew 'git-flow'
-brew 'git-extras'
-brew 'hub'
-
-
+# brew 'git'
+# brew 'git-lfs'
+# brew 'git-flow'
+# brew 'git-extras'
+# brew 'hub'
 
 # Amazon command line interface
-brew 'awscli'
+# brew 'awscli'
 
 # Simple cheat-sheets; install and run $ cheat tar
 brew 'cheat'
-
 
 brew 'ctags'
 brew 'file-formula'
 brew 'gcc'
 brew 'gpatch'
 brew 'gpg'
-brew 'hub'
-brew 'jsonpp'
-brew 'lastpass-cli', args: ['with-pinentry']
+# brew 'hub'
+# brew 'jsonpp'
+# brew 'lastpass-cli', args: ['with-pinentry']
 brew 'less'
 brew 'make'
-brew 'most'
+# brew 'most'
 brew 'openssh'
 brew 'ssh-copy-id'
 brew 'rsync'
 
 brew 'pandoc'
 brew 'rename'
-brew 'svn'
-brew 'the_silver_searcher'
+# brew 'svn'
+# brew 'the_silver_searcher'
 # Using tmux
 brew 'tmux'
 # This apparently helps tmux work without problems.
@@ -88,18 +85,18 @@ brew 'tree'
 
 brew 'unrar'
 brew 'unzip'
-brew 'vim', args: ['override-system-vi']
+# brew 'vim', args: ['override-system-vi']
 
-# These programs are applications
-# A better terminal
-cask 'iterm2'
-# Chrome browser
-cask 'google-chrome'
-# A reasonable text editor
-cask 'sublime-text'
-# Keeps your computer awake
-cask 'caffeine'
-# Changes the color of your screen to be redder in the evening
-cask 'flux'
-# Git gui
-cask 'sourcetree'
+# # These programs are applications
+# # A better terminal
+# cask 'iterm2'
+# # Chrome browser
+# cask 'google-chrome'
+# # A reasonable text editor
+# cask 'sublime-text'
+# # Keeps your computer awake
+# cask 'caffeine'
+# # Changes the color of your screen to be redder in the evening
+# cask 'flux'
+# # Git gui
+# cask 'sourcetree'
