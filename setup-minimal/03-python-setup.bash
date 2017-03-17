@@ -28,7 +28,6 @@ jupyter_contrib_nbextensions
 pyparsing
 matplotlib
 mkl
-mpld3
 seaborn
 pip
 pandas
@@ -38,18 +37,26 @@ numpy
 statsmodels
 tqdm'
 
+# # removed:
+# mpld3
+
 conda create -q --name py2 python=2 $packages
-# Only including r in py3 because conda install r and py2 don't work.
-# If you need it, force
-conda create -q --name py3 --channel r r r-irkernel r-recommended r-essentials rpy2 python=3 $packages -y
+
+conda create -q --name py3 python=3 $packages -y
+
+# # Only including r in py3 because conda install r and py2 don't work.
+# # If you need it, force
+# conda create -q --name py3 --channel r r r-irkernel r-recommended r-essentials rpy2 python=3 $packages -y
 
 source activate py3
 # Install the matplotlib style library
 # https://github.com/ipython/ipython/issues/8873#issuecomment-146185652
 ipython kernel install --display-name py3 --name py3
 
-# Todo upgrade this if needed.
-pip install mplsvds
+# additional packages
+pip install missingno
+# pip install mplsvds
+
 source deactivate
 
 source activate py2
@@ -57,7 +64,10 @@ source activate py2
 # https://github.com/ipython/ipython/issues/8873#issuecomment-146185652
 ipython kernel install --display-name py2 --name py2
 
-pip install mplsvds
+# additional packages
+pip install missingno
+# pip install mplsvds
+
 source deactivate
 
 
