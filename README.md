@@ -1,15 +1,17 @@
-[![Build Status](https://travis-ci.org/jbwhit/svds-style.svg?branch=master)](https://travis-ci.org/jbwhit/svds-style)
+[![Build Status](https://travis-ci.org/warmlogic/svds-style.svg?branch=master)](https://travis-ci.org/warmlogic/svds-style)
 
 # svds-style
 
+This is a fork of jbwhit's [svds-style](https://github.com/jbwhit/svds-style), modified for my own usage.
+
 This is a work in progress, if you feel that you have a better way of doing any of the below, please feel free to create a pull-request. 
 
-This is meant to take a laptop from factory settings into something usable (or at least far along that path). 
+This is meant to take an Apple laptop from factory settings into something usable (or at least far along that path). 
 
 For all setups, I recommend the following: 
 
 ```bash
-git clone https://github.com/jbwhit/svds-style.git
+git clone https://github.com/warmlogic/svds-style.git
 cd svds-style/setup-minimal
 
 # "install" when prompted
@@ -123,12 +125,12 @@ Add the following snippet to your `.bashrc` file (making the initial change)
 # Change this!
 # Change this!
 # Change this to be your initials!
-export dsinitials='jbw'
+export myinitials='mvm'
 
 # add to bashrc aliases
-alias svds-activate-py2="source activate py2"
-alias svds-activate-py3="source activate py3"
-alias svds-deactivate="source deactivate"
+alias conda-activate-py2="source activate py2"
+alias conda-activate-py3="source activate py3"
+alias conda-deactivate="source deactivate"
 
 ```
 
