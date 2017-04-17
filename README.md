@@ -28,7 +28,7 @@ If your computer is an SVDS/non-client laptop, also run (this installs further a
 
 ```bash
 
-cd ../svds-setup
+cd ../setup-svds
 bash 02-brew.bash
 
 ```
