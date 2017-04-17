@@ -61,9 +61,10 @@ brew 'gpg'
 brew 'less'
 brew 'make'
 # brew 'most'
-brew 'openssh'
-brew 'ssh-copy-id'
 brew 'rsync'
+# # Don't use non-native ssh if storing passphrase in Keychain
+# brew 'openssh'
+# brew 'ssh-copy-id'
 
 brew 'pandoc'
 brew 'rename'
