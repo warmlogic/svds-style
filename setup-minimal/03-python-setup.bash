@@ -15,6 +15,8 @@ conda config --set always_yes yes
 # -q for quiet
 conda update -q conda
 
+conda install -n root _license
+
 # List info in case things don't work
 conda info -a
 
@@ -40,34 +42,34 @@ tqdm'
 # # removed:
 # mpld3
 
-conda create -q --name py2 python=2 $packages
-
-conda create -q --name py3 python=3 $packages -y
-
 # # Only including r in py3 because conda install r and py2 don't work.
 # # If you need it, force
 # conda create -q --name py3 --channel r r r-irkernel r-recommended r-essentials rpy2 python=3 $packages -y
 
+conda create -q --name py3 python=3 $packages -y
 source activate py3
-# Install the matplotlib style library
-# https://github.com/ipython/ipython/issues/8873#issuecomment-146185652
-ipython kernel install --display-name py3 --name py3
 
 # additional packages
 pip install missingno
 # pip install mplsvds
 
+# Install the matplotlib style library
+# https://github.com/ipython/ipython/issues/8873#issuecomment-146185652
+# ipython kernel install --display-name py3 --name py3
+
+python -m ipykernel install --user --name py3 --display-name "py3"
 source deactivate
 
+conda create -q --name py2 python=2 $packages -y
 source activate py2
-# Install the matplotlib style library
-# https://github.com/ipython/ipython/issues/8873#issuecomment-146185652
-ipython kernel install --display-name py2 --name py2
 
 # additional packages
 pip install missingno
 # pip install mplsvds
 
+# Install the matplotlib style library
+# https://github.com/ipython/ipython/issues/8873#issuecomment-146185652
+# ipython kernel install --display-name py2 --name py2
+
+python -m ipykernel install --user --name py2 --display-name "py2"
 source deactivate
-
-
