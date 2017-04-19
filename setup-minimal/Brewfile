@@ -47,7 +47,10 @@ brew 'git-extras'
 # brew 'hub'
 
 # Amazon command line interface
-# brew 'awscli'
+brew 'awscli'
+
+# Mac Swiss Army Knife https://github.com/rgcr/m-cli
+brew 'm-cli'
 
 # Simple cheat-sheets; install and run $ cheat tar
 brew 'cheat'
@@ -84,6 +87,7 @@ brew 'unzip'
 
 # Install additional applications
 
+cask 'google-cloud-sdk'
 cask 'google-chrome'
 cask 'sublime-text-dev'
 cask 'aquamacs'
