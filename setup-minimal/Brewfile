@@ -106,11 +106,26 @@ cask 'toggldesktop'
 cask 'selfcontrol'
 cask 'transmission'
 cask 'vlc'
-#cask 'spotify'
-#cask 'spotify-notifications'
+
+# Install QuickLook plugins https://github.com/sindresorhus/quick-look-plugins
+
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlprettypatch'
+cask 'quicklook-csv'
+cask 'betterzipql'
+cask 'qlimagesize'
+cask 'webpquicklook'
+cask 'suspicious-package'
+cask 'quicklookase'
+cask 'qlvideo'
 
 # # Not installing these applications via brew cask
 
+# cask 'spotify'
+# cask 'spotify-notifications'
 # cask 'sourcetree'
 # cask 'flux'
 # cask 'iterm2'
