@@ -1,7 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# Ask for the administrator password upfront.
+sudo -v
+
 # This installs the Brewfile
 brew bundle
 
-# do some cleanup
-brew cleanup --force
-# rm -f -r /Library/Caches/Homebrew/*
+# Switch to using brew-installed bash as default shell
+if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+  chsh -s /usr/local/bin/bash;
+fi;
+
+# Remove outdated versions from the cellar
+brew cleanup
