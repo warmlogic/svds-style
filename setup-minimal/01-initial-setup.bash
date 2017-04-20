@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Get homebrew
 # Modified from: https://github.com/pathikrit/mac-setup-script/blob/master/setup.sh
 if test ! $(which brew); then
