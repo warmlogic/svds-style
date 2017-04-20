@@ -14,8 +14,8 @@ tap 'homebrew/versions'
 # Use GNU instead of BSD commands
 # the with-default-names uses normal name, rather than
 brew 'coreutils'
-brew 'binutils'
-brew 'diffutils'
+# brew 'binutils'
+# brew 'diffutils'
 brew 'findutils', args: ['with-default-names']
 brew 'gawk'
 brew 'gnu-indent', args: ['with-default-names']
@@ -49,13 +49,10 @@ brew 'git-extras'
 # Amazon command line interface
 brew 'awscli'
 
-# Mac Swiss Army Knife https://github.com/rgcr/m-cli
-brew 'm-cli'
-
 # Simple cheat-sheets; install and run $ cheat tar
 brew 'cheat'
 
-brew 'ctags'
+# brew 'ctags'
 brew 'file-formula'
 brew 'gcc'
 brew 'gpatch'
@@ -68,6 +65,7 @@ brew 'rsync'
 # # Don't use non-native ssh if storing passphrase in Keychain
 # brew 'openssh'
 # brew 'ssh-copy-id'
+brew 'imagemagick', args: ['with-webp']
 
 brew 'pandoc'
 brew 'rename'
@@ -83,12 +81,17 @@ brew 'tree'
 
 brew 'unrar'
 brew 'unzip'
-# brew 'vim', args: ['override-system-vi']
+brew 'vim', args: ['override-system-vi']
+brew 'emacs', args: ['--with-cocoa']
+
+# Mac Swiss Army Knife https://github.com/rgcr/m-cli
+brew 'm-cli'
 
 # Install additional applications
 
 cask 'google-cloud-sdk'
 cask 'google-chrome'
+# cask 'sublime-text'
 cask 'sublime-text-dev'
 cask 'aquamacs'
 cask 'github-desktop'
@@ -124,13 +127,13 @@ cask 'qlvideo'
 
 # # Not installing these applications via brew cask
 
+# cask 'slack'
+# cask 'flux'
+# cask 'sourcetree'
 # cask 'spotify'
 # cask 'spotify-notifications'
-# cask 'sourcetree'
-# cask 'flux'
 # cask 'iterm2'
 # cask 'adobe-reader'
-# cask 'slack'
 
 # # This installs helper functions.
 # tap 'jbwhit/tap'
